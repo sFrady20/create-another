@@ -1,0 +1,39 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Users\sfrad\AppData\Local\Microsoft\WindowsApps;C:\Users\sfrad\AppData\Local\Yarn\bin;C:\Users\sfrad\.dotnet\tools;C:\Users\sfrad\AppData\Local\Android\Sdk\emulator
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\sfrad\projects\create-another-one\package.json: Unexpected token } in JSON at position 136
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "create-another-one",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "bin": {
+      "create-another-one"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
