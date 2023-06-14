@@ -1,4 +1,8 @@
 import inquirer from "inquirer";
+import { simpleGit } from "simple-git";
+import { mkdir, rm } from "fs/promises";
+import path from "path";
+import { existsSync } from "fs";
 
 (async () => {
   const answers = await inquirer.prompt([
@@ -22,5 +26,15 @@ import inquirer from "inquirer";
     },
   ]);
 
-  console.log(answers);
+  const projectPath = path.join(process.cwd(), `./${answers.name}`);
+  if (!existsSync(projectPath)) await mkdir(projectPath);
+  const git = simpleGit(projectPath);
+  await git.clone(
+    `git@github.com:sFrady20/template-${answers.template}.git`,
+    `../${answers.name}`,
+    ["--depth=1"]
+  );
+  const projectGitPath = path.join(projectPath, "./.git");
+  await rm(projectGitPath, { recursive: true, force: true });
+  await git.init();
 })();

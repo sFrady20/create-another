@@ -1,0 +1,34 @@
+{
+  "name": "create-another-one",
+  "version": "1.0.0-alpha.0",
+  "main": "dist/index.mjs",
+  "bin": "dist/index.mjs",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/sFrady20/create-another-one"
+  },
+  "bugs": {
+    "url": "https://github.com/sFrady20/create-another-one/issues"
+  },
+  "author": {
+    "email": "sFrady20@gmail.com",
+    "name": "Steven Frady",
+    "url": "https://stevenfrady.com"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup src/index.ts --watch",
+    "build": "tsup src/index.ts"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.7",
+    "simple-git": "^3.19.0",
+    "tsup": "^6.7.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3"
+  },
+  "packageManager": "yarn@3.6.0"
+}
