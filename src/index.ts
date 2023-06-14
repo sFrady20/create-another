@@ -103,7 +103,7 @@ async function init() {
   await git.init();
 
   console.log(`Project created at ${colors.bold(`"${projectPath}"`)}`);
-  console.log(colors.bgBlack(colors.blue(`cd ./${answers.name}; yarn start`)));
+  console.log(colors.bgBlack(colors.blue(`cd ./${answers.name}; yarn;`)));
 }
 
 init();

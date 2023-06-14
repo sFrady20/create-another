@@ -1,6 +1,6 @@
 ## create-another-one
 
-The following documentation provides an overview of the provided script and its functionality. The script is designed to act as a template management system using the npm "create" prefix. It allows users to create a new project based on a template by running `npm create-another-one` or `yarn create another-one` and specifying the options and arguments.
+`create-another-one` allows users to create a new project based on a template by running `npm create-another-one` or `yarn create another-one` and specifying the options and arguments.
 
 ### Usage
 

@@ -686,9 +686,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-another-one@workspace:packages/one":
+"create-another-one@workspace:.":
   version: 0.0.0-use.local
-  resolution: "create-another-one@workspace:packages/one"
+  resolution: "create-another-one@workspace:."
   dependencies:
     "@types/inquirer": ^9.0.3
     colors: ^1.4.0
@@ -697,13 +697,7 @@ __metadata:
     simple-git: ^3.19.0
     tsup: ^6.7.0
   bin:
-    create-another-one: dist/index.mjs
-  languageName: unknown
-  linkType: soft
-
-"create-another@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "create-another@workspace:."
+    create-another-one: index.js
   languageName: unknown
   linkType: soft
 
