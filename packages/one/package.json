@@ -1,11 +1,13 @@
 {
   "name": "create-another-one",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "main": "dist/index.mjs",
   "bin": "dist/index.mjs",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/sFrady20/create-another-one"
+    "type": "git",
+    "url": "https://github.com/sFrady20/create-another-one",
+    "directory": "packages/create-vite"
   },
   "bugs": {
     "url": "https://github.com/sFrady20/create-another-one/issues"
@@ -16,13 +18,15 @@
     "url": "https://stevenfrady.com"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "dev": "tsup src/index.ts --watch",
     "build": "tsup src/index.ts"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "commander": "^10.0.1",
     "inquirer": "^9.2.7",
     "simple-git": "^3.19.0",
