@@ -54,7 +54,6 @@ async function init() {
             { name: colors.green("Mobile App"), value: "app" },
             { name: colors.blue("Desktop App"), value: "desktop" },
             { name: colors.cyan("Kiosk"), value: "kiosk" },
-            { name: colors.yellow("Library"), value: "lib" },
           ],
         })
       ).template,
